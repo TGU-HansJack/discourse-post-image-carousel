@@ -36,6 +36,104 @@ div.swiper-thumbs {
   margin-top: 2em;
 }
 
+.create-carousel-modal {
+  .d-modal__container {
+    width: min(42rem, calc(100vw - 2rem));
+  }
+
+  .d-modal__subtitle-text {
+    max-width: 48rem;
+    line-height: 1.5;
+  }
+}
+
+.create-carousel-modal__body {
+  padding-top: 0.25rem;
+}
+
+.create-carousel-modal__layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.create-carousel-modal__section {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--primary-low);
+  border-radius: 0.9rem;
+  background: var(--secondary);
+}
+
+.create-carousel-modal__section-header {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.create-carousel-modal__section-title {
+  margin: 0;
+  font-size: var(--font-up-1);
+  line-height: 1.35;
+}
+
+.create-carousel-modal__section-subtitle {
+  margin: 0;
+  color: var(--primary-medium);
+  line-height: 1.5;
+}
+
+.create-carousel-modal__fields {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.create-carousel-modal__field {
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--primary-low);
+  border-radius: 0.8rem;
+  background: var(--primary-very-low);
+}
+
+.create-carousel-modal__field > * {
+  margin: 0;
+}
+
+.create-carousel-modal__field :where(p) {
+  line-height: 1.5;
+}
+
+.create-carousel-modal__hint {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border: 1px dashed var(--primary-low);
+  border-radius: 0.8rem;
+  background: var(--primary-very-low);
+  color: var(--primary-medium);
+  line-height: 1.6;
+}
+
+.create-carousel-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.25rem;
+}
+
+.create-carousel-modal__actions .btn {
+  min-width: 9rem;
+}
+
+@media (max-width: 767px) {
+  .create-carousel-modal__section,
+  .create-carousel-modal__field,
+  .create-carousel-modal__hint {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .create-carousel-modal__actions .btn {
+    width: 100%;
+  }
+}
+
 // @if $thumbs_direction == "vertical" {
 //   div[data-wrap="Carousel"] {
 //     display: flex;
